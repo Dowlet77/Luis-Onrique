@@ -1,0 +1,311 @@
+@import "_null.scss";
+@import "_button.scss";
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+@import "_header";
+.about-me {
+	display: flex;
+	column-gap: 128px;
+	align-items: center;
+	height: 677px;
+	&__img {
+		img {
+			height: 443px;
+			width: 571px;
+		}
+	}
+}
+.content {
+	&__title {
+		font-size: 46px;
+		font-family: "Asap";
+		color: rgba(77, 77, 77, 0.8);
+		font-weight: bold;
+		line-height: 1.065;
+	}
+	&__title::before {
+		display: block;
+		left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+		width: 55px; /*задаём длинну линии до наведения курсора*/
+		height: 4px; /*задаём ширину линии*/
+		background-color: rgba(77, 77, 77, 0.8); /*задаём цвет линии*/
+		content: "";
+		margin-bottom: 19px;
+	}
+
+	&__text {
+		font-size: 16px;
+		font-family: "Asap";
+		color: rgb(77, 77, 77);
+		line-height: 1.625;
+	}
+
+	&__button {
+		margin-top: 38px;
+		@extend %btn;
+		button {
+			width: 245px;
+			height: 50px;
+		}
+	}
+}
+.service {
+	background-color: #f6f6f6;
+	padding-top: 142px;
+	&__body {
+		align-items: center;
+		height: 693px;
+	}
+
+	&__title {
+		font-size: 46px;
+		font-family: "Asap";
+		color: rgba(77, 77, 77, 0.8);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.065;
+		text-align: center;
+		margin-bottom: 70px;
+	}
+	&__title::before {
+		display: block;
+		width: 60px; /*задаём длинну линии до наведения курсора*/
+		height: 4px; /*задаём ширину линии*/
+		background-color: rgba(77, 77, 77, 0.8); /*задаём цвет линии*/
+		content: "";
+		margin-bottom: 19px;
+		margin-left: 47.5%;
+	}
+	.service__container {
+		display: grid;
+		grid: repeat(2, 1fr) / repeat(3, 1fr);
+		row-gap: 88px;
+		text-align: center;
+		align-items: center;
+	}
+}
+
+.container-service {
+	&__item {
+	}
+
+	&__icon {
+	}
+
+	&__title {
+		font-size: 24px;
+		font-family: "Asap";
+		color: rgb(77, 77, 77);
+	}
+}
+.my-skills {
+	&__body {
+		padding-top: 118px;
+		text-align: center;
+		height: 767px;
+	}
+
+	&__title {
+		font-size: 46px;
+		font-family: "Asap";
+		color: rgba(77, 77, 77, 0.8);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.065;
+		margin-bottom: 70px;
+	}
+	&__title::before {
+		display: block;
+		width: 60px; /*задаём длинну линии до наведения курсора*/
+		height: 4px; /*задаём ширину линии*/
+		background-color: rgba(77, 77, 77, 0.8); /*задаём цвет линии*/
+		content: "";
+		margin-bottom: 19px;
+		margin-left: 47.5%;
+	}
+	&__img {
+	}
+}
+.portfolio {
+	background-color: #f6f6f6;
+	&__body {
+		text-align: center;
+		padding-top: 150px;
+		height: 1094px;
+	}
+
+	&__title {
+		font-size: 46px;
+		font-family: "Asap";
+		color: rgba(77, 77, 77, 0.8);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.065;
+		margin-bottom: 70px;
+	}
+	&__title::before {
+		display: block;
+		width: 60px; /*задаём длинну линии до наведения курсора*/
+		height: 4px; /*задаём ширину линии*/
+		background-color: rgba(77, 77, 77, 0.8); /*задаём цвет линии*/
+		content: "";
+		margin-bottom: 19px;
+		margin-left: 47.5%;
+	}
+
+	&__container {
+		display: grid;
+		grid: repeat(2, 1fr) / repeat(3, 1fr);
+		gap: 30px 25px;
+	}
+	&__button {
+		margin-top: 27px;
+		@extend %btn;
+		button {
+			height: 50px;
+			width: 190px;
+		}
+	}
+}
+
+.container-portfolio {
+	&__item {
+		img {
+			height: 316px;
+			width: 365px;
+		}
+	}
+}
+.testimonials {
+	&__body {
+		height: 711px;
+		text-align: center;
+	}
+
+	&__title {
+		margin-top: 125px;
+		font-size: 46px;
+		font-family: "Asap";
+		color: rgba(77, 77, 77, 0.8);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.065;
+		margin-bottom: 70px;
+	}
+	&__title::before {
+		display: block;
+		width: 60px; /*задаём длинну линии до наведения курсора*/
+		height: 4px; /*задаём ширину линии*/
+		background-color: rgba(77, 77, 77, 0.8); /*задаём цвет линии*/
+		content: "";
+		margin-bottom: 19px;
+		margin-left: 47.5%;
+	}
+
+	&__container {
+		display: flex;
+		text-align: left;
+		column-gap: 30px;
+		border: 1px solid black;
+		padding: 82px 120px;
+	}
+}
+
+.container-testimonials {
+	&__avatar {
+	}
+
+	&__content {
+	}
+}
+.content-testimonials {
+	&__title {
+		font-size: 30px;
+		font-family: "Asap";
+		color: rgba(33, 33, 33, 0.902);
+		text-transform: uppercase;
+	}
+
+	&__subtitle {
+		font-size: 12px;
+		font-family: "Asap";
+		color: rgba(33, 33, 33, 0.902);
+		font-style: italic;
+		text-transform: uppercase;
+		line-height: 3;
+	}
+
+	&__text {
+		font-size: 16px;
+		font-family: "Asap";
+		color: rgba(33, 33, 33, 0.6);
+		text-transform: uppercase;
+		line-height: 2;
+	}
+
+	&__button {
+		display: flex;
+		column-gap: 4px;
+	}
+}
+.button-testimonials {
+	margin-top: 60px;
+	margin-left: 35%;
+	&__item {
+		height: 12px;
+		width: 12px;
+		border: 1px solid black;
+		transition: 0.5s;
+	}
+	&__item:hover {
+		background-color: black;
+	}
+}
+.results {
+	background-color: #f6f6f6;
+	
+
+	&__body {
+		height: 302px;
+	}
+
+	&__container {
+		background-color: #f6f6f6;
+		padding-top: 75px;
+		padding-bottom: 66px;
+		display: flex;
+		justify-content: center;
+		column-gap: 180px;
+		text-align: center;
+	}
+}
+.container-results {
+	&__item {
+	}
+
+	&__img {
+		img {
+			height: 98px;
+			width: 98px;
+		}
+	}
+
+	&__title {
+		font-size: 22px;
+		font-family: "Asap";
+		color: rgba(33, 33, 33, 0.902);
+		text-transform: uppercase;
+		line-height: 1.455;
+	}
+
+	&__subtitle {
+		font-size: 22px;
+		font-family: "Asap";
+		color: rgba(33, 33, 33, 0.8);
+		text-transform: uppercase;
+		line-height: 1.455;
+	}
+}
+@import "_footer";

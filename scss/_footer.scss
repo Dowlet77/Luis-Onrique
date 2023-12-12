@@ -1,0 +1,109 @@
+.footer {
+	background: url(../img/contact_bg.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	&__body {
+		margin-top: 154px;
+		padding-top: 120px;
+		height: 789px;
+		text-align: center;
+	}
+	&__line {
+		display: block;
+		width: 100%; /*задаём длинну линии до наведения курсора*/
+		height: 1px; /*задаём ширину линии*/
+		background-color: rgba(255, 255, 255, 0.8); /*задаём цвет линии*/
+		content: "";
+		margin-bottom: 19px;
+	}
+	&__title {
+		font-size: 46px;
+		font-family: "Asap";
+		color: rgba(255, 255, 255, 0.8);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.065;
+		margin-bottom: 70px;
+	}
+	&__title::before {
+		display: block;
+		width: 60px; /*задаём длинну линии до наведения курсора*/
+		height: 4px; /*задаём ширину линии*/
+		background-color: rgba(255, 255, 255, 0.8); /*задаём цвет линии*/
+		content: "";
+		margin-bottom: 19px;
+		margin-left: 47.5%;
+	}
+	&__form {
+	}
+	.form-footer {
+		&__login {
+			margin-bottom:30px;
+		}
+
+		&__message {
+			height:207px;
+			width: 768px;
+			padding:10px;
+		}
+	}
+	.name {
+		height: 60px;
+		width: 370px;
+		padding: 10px;
+		margin-right: 24px;
+	}
+	.email {
+		height: 60px;
+		width: 370px;
+		padding: 10px;
+	}
+
+	&__button {
+		@extend %btn;
+		margin-top: 30px;
+		margin-bottom: 60px;
+		button {
+			height: 50px;
+			width: 124px;
+			color: white;
+			border: 1px solid white;
+			img {
+				padding-left: 5px;
+			}
+		}
+	}
+	.bottom-footer {
+		&__body {
+			display: flex;
+			text-align: center;
+			column-gap: 22%;
+		}
+		&__subscribe {
+			display: flex;
+			column-gap: 10px;
+			align-items: center;
+		}
+	}
+	.subscribe-footer {
+		&__item {
+			background-color: #fff;
+			width: 30px;
+			height: 30px;
+			img {
+				padding-top: 10px;
+			}
+		}
+		&__item:hover {
+			background-color: rgb(43, 147, 226);
+			transition: 0.5s;
+		}
+
+		&__title {
+			font-size: 16px;
+			font-family: "Montserrat";
+			color: rgb(255, 255, 255);
+			line-height: 4.188;
+		}
+	}
+}

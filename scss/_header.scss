@@ -1,0 +1,107 @@
+header {
+	background-color: #e0e0e0;
+}
+.hd-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.top-hd {
+	text-align: center;
+
+	&__link {
+		text-decoration: none;
+	}
+	&__icon {
+		padding-top: 40px;
+	}
+
+	&__title {
+		font-size: 24px;
+		font-family: "Lato";
+		color: rgb(0, 0, 0);
+		text-transform: uppercase;
+	}
+	&__min-title {
+		font-size: 6px;
+		font-family: "Lato";
+		color: rgb(0, 0, 0);
+		text-transform: uppercase;
+	}
+}
+.menu {
+	&__body {
+		padding: 10px;
+	}
+
+	&__list {
+		display: flex;
+		column-gap: 38px;
+	}
+
+	&__item {
+		list-style: none;
+	}
+
+	&__link {
+		position: relative;
+		color: #4d4d4d; /*задаём цвет ссылки*/
+		cursor: pointer;
+		line-height: 2; /*задаём высоту строки*/
+		text-decoration: none; /*убираем подчёркивание*/
+	}
+	&__link::after {
+		display: block;
+		position: absolute;
+		left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+		width: 0; /*задаём длинну линии до наведения курсора*/
+		height: 2px; /*задаём ширину линии*/
+		background-color: #4d4d4d; /*задаём цвет линии*/
+		content: "";
+		transition: width 0.3s ease-out; /*задаём время анимации*/
+	}
+	&__link:hover:after,
+	&__link:focus:after {
+		width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+	}
+}
+.hd-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.content-hd {
+	&__img {
+		img {
+			width: 575px;
+			height: 641px;
+		}
+	}
+}
+
+.text {
+	&__title {
+		font-size: 90px;
+		font-family: "Asap";
+		color: rgb(77, 77, 77);
+		line-height: 0.744;
+	}
+
+	&__min-title {
+		font-size: 22px;
+		font-family: "Asap";
+		color: rgba(77, 77, 77, 0.541);
+		line-height: 3.045;
+	}
+
+	&__button {
+		@extend %btn;
+		button {
+			width: 160px;
+			height: 50px;
+		}
+		button:nth-child(1) {
+			margin-right: 20px;
+		}
+	}
+}
