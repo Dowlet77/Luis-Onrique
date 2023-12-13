@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Asap:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 * {
   padding: 0px;
   margin: 0px;
@@ -276,13 +277,9 @@ header {
 .content__title::before {
   display: block;
   left: 0;
-  /*изменить на right:0;, чтобы изменить направление подчёркивания */
   width: 55px;
-  /*задаём длинну линии до наведения курсора*/
   height: 4px;
-  /*задаём ширину линии*/
   background-color: rgba(77, 77, 77, 0.8);
-  /*задаём цвет линии*/
   content: "";
   margin-bottom: 19px;
 }
@@ -329,11 +326,8 @@ header {
 .service__title::before {
   display: block;
   width: 60px;
-  /*задаём длинну линии до наведения курсора*/
   height: 4px;
-  /*задаём ширину линии*/
   background-color: rgba(77, 77, 77, 0.8);
-  /*задаём цвет линии*/
   content: "";
   margin-bottom: 19px;
   margin-left: 47.5%;
@@ -375,11 +369,8 @@ header {
 .my-skills__title::before {
   display: block;
   width: 60px;
-  /*задаём длинну линии до наведения курсора*/
   height: 4px;
-  /*задаём ширину линии*/
   background-color: rgba(77, 77, 77, 0.8);
-  /*задаём цвет линии*/
   content: "";
   margin-bottom: 19px;
   margin-left: 47.5%;
@@ -408,11 +399,8 @@ header {
 .portfolio__title::before {
   display: block;
   width: 60px;
-  /*задаём длинну линии до наведения курсора*/
   height: 4px;
-  /*задаём ширину линии*/
   background-color: rgba(77, 77, 77, 0.8);
-  /*задаём цвет линии*/
   content: "";
   margin-bottom: 19px;
   margin-left: 47.5%;
@@ -458,11 +446,8 @@ header {
 .testimonials__title::before {
   display: block;
   width: 60px;
-  /*задаём длинну линии до наведения курсора*/
   height: 4px;
-  /*задаём ширину линии*/
   background-color: rgba(77, 77, 77, 0.8);
-  /*задаём цвет линии*/
   content: "";
   margin-bottom: 19px;
   margin-left: 47.5%;
