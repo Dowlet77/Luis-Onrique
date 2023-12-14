@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Asap:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Asap:100,200,300,regular,500,600,700,800,900);
 * {
   padding: 0px;
   margin: 0px;
@@ -267,6 +267,7 @@ header {
 }
 
 .content__title {
+  letter-spacing: 7px;
   font-size: 46px;
   font-family: "Asap";
   color: rgba(77, 77, 77, 0.8);
@@ -313,6 +314,7 @@ header {
 }
 
 .service__title {
+  letter-spacing: 7px;
   font-size: 46px;
   font-family: "Asap";
   color: rgba(77, 77, 77, 0.8);
@@ -361,6 +363,7 @@ header {
 }
 
 .my-skills__title {
+  letter-spacing: 7px;
   font-size: 46px;
   font-family: "Asap";
   color: rgba(77, 77, 77, 0.8);
@@ -391,6 +394,7 @@ header {
 }
 
 .portfolio__title {
+  letter-spacing: 7px;
   font-size: 46px;
   font-family: "Asap";
   color: rgba(77, 77, 77, 0.8);
@@ -437,6 +441,7 @@ header {
 }
 
 .testimonials__title {
+  letter-spacing: 7px;
   margin-top: 125px;
   font-size: 46px;
   font-family: "Asap";
@@ -592,6 +597,7 @@ header {
 }
 
 .footer__title {
+  letter-spacing: 7px;
   font-size: 46px;
   font-family: "Asap";
   color: rgba(255, 255, 255, 0.8);
