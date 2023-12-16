@@ -1,10 +1,8 @@
-@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Asap:100,200,300,regular,500,600,700,800,900);
 * {
   padding: 0px;
   margin: 0px;
   border: 0;
-  /* border: 1px solid rgb(255, 0, 0); */
 }
 
 *,
@@ -178,35 +176,32 @@ header {
 .menu__link {
   position: relative;
   color: #4d4d4d;
-  /*задаём цвет ссылки*/
   cursor: pointer;
   line-height: 2;
-  /*задаём высоту строки*/
   text-decoration: none;
-  /*убираем подчёркивание*/
 }
 
 .menu__link::after {
   display: block;
   position: absolute;
   left: 0;
-  /*изменить на right:0;, чтобы изменить направление подчёркивания */
   width: 0;
-  /*задаём длинну линии до наведения курсора*/
   height: 2px;
-  /*задаём ширину линии*/
   background-color: #4d4d4d;
-  /*задаём цвет линии*/
   content: "";
   -webkit-transition: width 0.3s ease-out;
   -o-transition: width 0.3s ease-out;
   transition: width 0.3s ease-out;
-  /*задаём время анимации*/
 }
 
 .menu__link:hover:after, .menu__link:focus:after {
   width: 100%;
-  /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+@media (max-width: 648px) {
+  .menu .menu__body {
+    display: none;
+  }
 }
 
 .hd-content {
@@ -587,11 +582,8 @@ header {
 .footer__line {
   display: block;
   width: 100%;
-  /*задаём длинну линии до наведения курсора*/
   height: 1px;
-  /*задаём ширину линии*/
   background-color: rgba(255, 255, 255, 0.8);
-  /*задаём цвет линии*/
   content: "";
   margin-bottom: 19px;
 }
@@ -610,11 +602,8 @@ header {
 .footer__title::before {
   display: block;
   width: 60px;
-  /*задаём длинну линии до наведения курсора*/
   height: 4px;
-  /*задаём ширину линии*/
   background-color: rgba(255, 255, 255, 0.8);
-  /*задаём цвет линии*/
   content: "";
   margin-bottom: 19px;
   margin-left: 47.5%;

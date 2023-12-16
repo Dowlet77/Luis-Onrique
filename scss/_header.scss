@@ -45,24 +45,29 @@ header {
 
 	&__link {
 		position: relative;
-		color: #4d4d4d; /*задаём цвет ссылки*/
+		color: #4d4d4d; 
 		cursor: pointer;
-		line-height: 2; /*задаём высоту строки*/
-		text-decoration: none; /*убираем подчёркивание*/
+		line-height: 2; 
+		text-decoration: none;
 	}
 	&__link::after {
 		display: block;
 		position: absolute;
-		left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-		width: 0; /*задаём длинну линии до наведения курсора*/
-		height: 2px; /*задаём ширину линии*/
-		background-color: #4d4d4d; /*задаём цвет линии*/
+		left: 0; 
+		width: 0; 
+		height: 2px; 
+		background-color: #4d4d4d; 
 		content: "";
-		transition: width 0.3s ease-out; /*задаём время анимации*/
+		transition: width 0.3s ease-out;
 	}
 	&__link:hover:after,
 	&__link:focus:after {
-		width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+		width: 100%; 
+	}
+	@media(max-width:648px){
+		.menu__body{
+			display:none;
+		}
 	}
 }
 .hd-content {
