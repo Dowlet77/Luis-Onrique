@@ -198,8 +198,27 @@ header {
   width: 100%;
 }
 
+.menu__burger {
+  padding: 15px 15px 0px 0px;
+}
+
+.menu__burger span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: rgba(137, 135, 135, 0.8);
+  content: "";
+  margin-bottom: 5px;
+}
+
 @media (max-width: 648px) {
   .menu .menu__body {
+    display: none;
+  }
+}
+
+@media (min-width: 648px) {
+  .menu .menu__burger {
     display: none;
   }
 }

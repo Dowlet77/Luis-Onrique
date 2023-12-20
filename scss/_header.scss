@@ -45,31 +45,48 @@ header {
 
 	&__link {
 		position: relative;
-		color: #4d4d4d; 
+		color: #4d4d4d;
 		cursor: pointer;
-		line-height: 2; 
+		line-height: 2;
 		text-decoration: none;
 	}
 	&__link::after {
 		display: block;
 		position: absolute;
-		left: 0; 
-		width: 0; 
-		height: 2px; 
-		background-color: #4d4d4d; 
+		left: 0;
+		width: 0;
+		height: 2px;
+		background-color: #4d4d4d;
 		content: "";
 		transition: width 0.3s ease-out;
 	}
 	&__link:hover:after,
 	&__link:focus:after {
-		width: 100%; 
+		width: 100%;
 	}
-	@media(max-width:648px){
-		.menu__body{
-			display:none;
+	&__burger {
+		padding:15px 15px 0px 0px;
+		span {
+			display: block;
+			width: 35px;
+			height: 4px;
+			background-color: rgba(137, 135, 135, 0.8);
+			content: "";
+			margin-bottom: 5px;
+		}
+	}
+	@media (max-width: 648px) {
+		.menu__body {
+			display: none;
+		}
+	}
+	@media (min-width: 648px) {
+		.menu__burger {
+			display: none;
 		}
 	}
 }
+
 .hd-content {
 	display: flex;
 	justify-content: space-between;
