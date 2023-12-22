@@ -75,6 +75,8 @@ header {
 			margin-bottom: 5px;
 		}
 	}
+	&__opened{
+	}
 	@media (max-width: 648px) {
 		.menu__body {
 			display: none;
@@ -89,14 +91,14 @@ header {
 
 .hd-content {
 	display: flex;
-	justify-content: space-between;
+	justify-content:center;
 	align-items: center;
 }
 .content-hd {
 	&__img {
 		img {
-			width: 575px;
-			height: 641px;
+			max-width: 575px;
+			max-height: 641px;
 		}
 	}
 }

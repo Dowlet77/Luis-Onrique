@@ -8,13 +8,17 @@
 @import "_header";
 .about-me {
 	display: flex;
+	// flex-wrap: wrap-reverse;
+	justify-content: center;
 	column-gap: 128px;
+	row-gap: 50px;
 	align-items: center;
-	height: 677px;
+	height: auto;
+	padding: 110px 0px;
 	&__img {
 		img {
-			height: 443px;
-			width: 571px;
+			max-height: 443px;
+			max-width:571px;
 		}
 	}
 }
@@ -56,9 +60,10 @@
 .service {
 	background-color: #f6f6f6;
 	padding-top: 142px;
+	padding-bottom: 120px;
 	&__body {
 		align-items: center;
-		height: 693px;
+		height: auto;
 	}
 
 	&__title {
@@ -82,16 +87,19 @@
 		margin-left: 47.5%;
 	}
 	.service__container {
-		display: grid;
-		grid: repeat(2, 1fr) / repeat(3, 1fr);
+		display:flex;
+		flex-wrap: wrap;
+		column-gap: 200px;
 		row-gap: 88px;
 		text-align: center;
+		justify-content: center;
 		align-items: center;
 	}
 }
 
 .container-service {
 	&__item {
+		width: 200px;
 	}
 
 	&__icon {
@@ -107,8 +115,9 @@
 .my-skills {
 	&__body {
 		padding-top: 118px;
+		padding-bottom: 125px;
 		text-align: center;
-		height: 767px;
+		height:auto;
 	}
 
 	&__title {
@@ -131,6 +140,10 @@
 		margin-left: 47.5%;
 	}
 	&__img {
+		img {
+			width: 100%;
+			height:100%;
+		}
 	}
 }
 .portfolio {
@@ -138,7 +151,7 @@
 	&__body {
 		text-align: center;
 		padding-top: 150px;
-		height: 1094px;
+		height: auto;
 	}
 
 	&__title {
@@ -162,12 +175,15 @@
 	}
 
 	&__container {
-		display: grid;
-		grid: repeat(2, 1fr) / repeat(3, 1fr);
+		display: flex;
+		flex-wrap: wrap;
 		gap: 30px 25px;
+		justify-content: center;
+		align-items: center;
 	}
 	&__button {
 		margin-top: 27px;
+		padding-bottom: 123px;
 		@extend %btn;
 		button {
 			height: 50px;
@@ -274,7 +290,7 @@
 	background-color: #f6f6f6;
 
 	&__body {
-		height: 302px;
+		height:auto;
 	}
 
 	&__container {
@@ -282,13 +298,17 @@
 		padding-top: 75px;
 		padding-bottom: 66px;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
+		align-items: center;
+		row-gap: 100px;
 		column-gap: 180px;
 		text-align: center;
 	}
 }
 .container-results {
 	&__item {
+		width:200px;
 	}
 
 	&__img {
