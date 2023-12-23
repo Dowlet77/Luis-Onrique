@@ -5,13 +5,14 @@ header {
 			flex-wrap: wrap-reverse;
 			justify-content: center;
 			text-align: center;
-			padding:20px 0px;
+			padding:50px 0px 100px 0px;
 		}
 		.content-hd {
 			&__text {
 			}
 		
 			&__img {
+				margin-bottom: 25px;
 				img {
 					max-width: 100%;
 					max-height: 100%;
@@ -46,6 +47,13 @@ header {
 		font-family: "Lato";
 		color: rgb(0, 0, 0);
 		text-transform: uppercase;
+	}
+	@media(max-width:648px){
+		.top-hd{
+			&__icon{
+				padding-left:15px;
+			}
+		}
 	}
 }
 .menu {
@@ -127,7 +135,7 @@ header {
 
 .text-hd-content {
 	&__title {
-		font-size: 90px;
+		font-size: 80px;
 		font-family: "Asap";
 		color: rgb(77, 77, 77);
 		line-height: 0.744;

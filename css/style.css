@@ -127,7 +127,10 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    padding: 20px 0px;
+    padding: 50px 0px 100px 0px;
+  }
+  header .content-hd__img {
+    margin-bottom: 25px;
   }
   header .content-hd__img img {
     max-width: 100%;
@@ -171,6 +174,12 @@ header {
   font-family: "Lato";
   color: black;
   text-transform: uppercase;
+}
+
+@media (max-width: 648px) {
+  .top-hd .top-hd__icon {
+    padding-left: 15px;
+  }
 }
 
 .menu__body {
@@ -257,7 +266,7 @@ header {
 }
 
 .text-hd-content__title {
-  font-size: 90px;
+  font-size: 80px;
   font-family: "Asap";
   color: #4d4d4d;
   line-height: 0.744;
@@ -289,19 +298,18 @@ header {
     text-align: center;
     row-gap: 30px;
   }
+  main .about-me__img {
+    margin-bottom: 25px;
+  }
   main .about-me__img img {
     max-height: 100%;
     max-width: 100%;
   }
   main .content__title::before {
-    display: block;
-    bottom: 90px;
     left: 47%;
-    width: 55px;
-    height: 4px;
-    background-color: rgba(77, 77, 77, 0.8);
-    content: "";
-    margin-bottom: 19px;
+  }
+  main .content__text {
+    max-width: 600px;
   }
 }
 
@@ -518,8 +526,10 @@ header {
 }
 
 .container-portfolio__item img {
-  height: 316px;
-  width: 365px;
+  max-height: 316px;
+  max-width: 365px;
+  width: 100%;
+  height: 100%;
 }
 
 .testimonials__body {
@@ -530,7 +540,7 @@ header {
 .testimonials__title {
   letter-spacing: 7px;
   margin-top: 125px;
-  font-size: 46px;
+  font-size: 40px;
   font-family: "Asap";
   color: rgba(77, 77, 77, 0.8);
   font-weight: bold;
@@ -704,7 +714,7 @@ header {
 .footer__body {
   margin-top: 154px;
   padding-top: 120px;
-  height: 789px;
+  height: auto;
   text-align: center;
 }
 
@@ -738,26 +748,43 @@ header {
   margin-left: 47.5%;
 }
 
+.footer__form {
+  padding: 20px;
+}
+
 .footer .form-footer__login {
-  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+  row-gap: 25px;
+  margin-bottom: 25px;
 }
 
 .footer .form-footer__message {
   height: 207px;
-  width: 768px;
+  width: 725px;
   padding: 10px;
 }
 
 .footer .name {
   height: 60px;
-  width: 370px;
+  width: 350px;
   padding: 10px;
-  margin-right: 24px;
 }
 
 .footer .email {
   height: 60px;
-  width: 370px;
+  width: 350px;
   padding: 10px;
 }
 
@@ -782,8 +809,9 @@ header {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  -webkit-column-gap: 22%;
-          column-gap: 22%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer .bottom-footer__subscribe {
@@ -795,6 +823,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer .bottom-footer__title {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: white;
+  line-height: 4.188;
+  margin-right: 480px;
 }
 
 .footer .subscribe-footer__item {
@@ -814,9 +850,39 @@ header {
   transition: 0.5s;
 }
 
-.footer .subscribe-footer__title {
-  font-size: 16px;
-  font-family: "Montserrat";
-  color: white;
-  line-height: 4.188;
+@media (max-width: 1170px) {
+  .footer .bottom-footer__body {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer .bottom-footer__subscribe {
+    margin: 0px 15px;
+  }
+  .footer .bottom-footer__title {
+    margin: 0px 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .form-footer__message {
+    height: 157px;
+    width: 354px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 490px) {
+  .footer .bottom-footer__body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .footer .bottom-footer__subscribe {
+    padding-bottom: 15px;
+  }
+  .footer .bottom-footer__title {
+    padding-bottom: 15px;
+  }
 }
