@@ -1,5 +1,24 @@
 header {
 	background-color: #e0e0e0;
+	@media (max-width: 960px) {
+		.hd-content {
+			flex-wrap: wrap-reverse;
+			justify-content: center;
+			text-align: center;
+			padding:20px 0px;
+		}
+		.content-hd {
+			&__text {
+			}
+		
+			&__img {
+				img {
+					max-width: 100%;
+					max-height: 100%;
+				}
+			}
+		}
+	}
 }
 .hd-top {
 	display: flex;
@@ -65,7 +84,7 @@ header {
 		width: 100%;
 	}
 	&__burger {
-		padding:15px 15px 0px 0px;
+		padding: 15px 15px 0px 15px;
 		span {
 			display: block;
 			width: 35px;
@@ -75,7 +94,7 @@ header {
 			margin-bottom: 5px;
 		}
 	}
-	&__opened{
+	&__opened {
 	}
 	@media (max-width: 648px) {
 		.menu__body {
@@ -91,10 +110,13 @@ header {
 
 .hd-content {
 	display: flex;
-	justify-content:center;
+	justify-content: space-between;
 	align-items: center;
 }
 .content-hd {
+	&__text {
+	}
+
 	&__img {
 		img {
 			max-width: 575px;
@@ -103,7 +125,7 @@ header {
 	}
 }
 
-.text {
+.text-hd-content {
 	&__title {
 		font-size: 90px;
 		font-family: "Asap";

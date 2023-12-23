@@ -92,7 +92,7 @@ h6 {
   font-size: inherit;
 }
 
-.text__button button, .content__button button, .portfolio__button button, .footer__button button {
+.text-hd-content__button button, .content__button button, .portfolio__button button, .footer__button button {
   background-color: #ffffff00;
   border: solid 1px #4d4d4d;
   font-size: 16px;
@@ -100,7 +100,7 @@ h6 {
   color: #4d4d4d;
 }
 
-.text__button button:hover, .content__button button:hover, .portfolio__button button:hover, .footer__button button:hover {
+.text-hd-content__button button:hover, .content__button button:hover, .portfolio__button button:hover, .footer__button button:hover {
   background-color: white;
   color: #4d4d4d;
   font-weight: 600;
@@ -117,6 +117,22 @@ h6 {
 
 header {
   background-color: #e0e0e0;
+}
+
+@media (max-width: 960px) {
+  header .hd-content {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 20px 0px;
+  }
+  header .content-hd__img img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 .hd-top {
@@ -199,7 +215,7 @@ header {
 }
 
 .menu__burger {
-  padding: 15px 15px 0px 0px;
+  padding: 15px 15px 0px 15px;
 }
 
 .menu__burger span {
@@ -227,9 +243,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -240,39 +256,61 @@ header {
   max-height: 641px;
 }
 
-.text__title {
+.text-hd-content__title {
   font-size: 90px;
   font-family: "Asap";
   color: #4d4d4d;
   line-height: 0.744;
 }
 
-.text__min-title {
+.text-hd-content__min-title {
   font-size: 22px;
   font-family: "Asap";
   color: rgba(77, 77, 77, 0.541);
   line-height: 3.045;
 }
 
-.text__button button {
+.text-hd-content__button button {
   width: 160px;
   height: 50px;
 }
 
-.text__button button:nth-child(1) {
+.text-hd-content__button button:nth-child(1) {
   margin-right: 20px;
+}
+
+@media (max-width: 960px) {
+  main .about-me {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    row-gap: 30px;
+  }
+  main .about-me__img img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  main .content__title::before {
+    display: block;
+    bottom: 90px;
+    left: 47%;
+    width: 55px;
+    height: 4px;
+    background-color: rgba(77, 77, 77, 0.8);
+    content: "";
+    margin-bottom: 19px;
+  }
 }
 
 .about-me {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 128px;
-          column-gap: 128px;
-  row-gap: 50px;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -286,6 +324,7 @@ header {
 }
 
 .content__title {
+  position: relative;
   letter-spacing: 7px;
   font-size: 46px;
   font-family: "Asap";
@@ -295,6 +334,8 @@ header {
 }
 
 .content__title::before {
+  position: absolute;
+  bottom: 90px;
   display: block;
   left: 0;
   width: 55px;
@@ -517,6 +558,33 @@ header {
           column-gap: 30px;
   border: 1px solid black;
   padding: 82px 120px;
+  margin: 0px 20px;
+}
+
+@media (max-width: 960px) {
+  .testimonials .container-testimonials {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 20px 50px;
+  }
+  .testimonials .button-testimonials {
+    margin-top: 30px;
+    margin-left: 45%;
+  }
+  .testimonials .content-testimonials__text {
+    overflow: auto;
+    height: 100px;
+  }
+}
+
+.container-testimonials__content {
+  margin-top: 10px;
+  max-width: 698px;
+  max-height: 234px;
 }
 
 .content-testimonials__title {

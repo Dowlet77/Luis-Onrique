@@ -6,24 +6,53 @@
 	margin: 0 auto;
 }
 @import "_header";
+main {
+	@media (max-width: 960px) {
+		.about-me {
+			flex-wrap: wrap-reverse;
+			justify-content: center;
+			text-align: center;
+			row-gap: 30px;
+
+			&__img {
+				img {
+					max-height: 100%;
+					max-width: 100%;
+				}
+			}
+		}
+		.content {
+			&__title {
+			}
+			&__title::before {
+				display: block;
+				bottom: 90px;
+				left: 47%;
+				width: 55px;
+				height: 4px;
+				background-color: rgba(77, 77, 77, 0.8);
+				content: "";
+				margin-bottom: 19px;
+			}
+		}
+	}
+}
 .about-me {
 	display: flex;
-	// flex-wrap: wrap-reverse;
-	justify-content: center;
-	column-gap: 128px;
-	row-gap: 50px;
+	column-gap: 50px;
 	align-items: center;
 	height: auto;
 	padding: 110px 0px;
 	&__img {
 		img {
 			max-height: 443px;
-			max-width:571px;
+			max-width: 571px;
 		}
 	}
 }
 .content {
 	&__title {
+		position: relative;
 		letter-spacing: 7px;
 		font-size: 46px;
 		font-family: "Asap";
@@ -32,6 +61,8 @@
 		line-height: 1.065;
 	}
 	&__title::before {
+		position: absolute;
+		bottom: 90px;
 		display: block;
 		left: 0;
 		width: 55px;
@@ -87,7 +118,7 @@
 		margin-left: 47.5%;
 	}
 	.service__container {
-		display:flex;
+		display: flex;
 		flex-wrap: wrap;
 		column-gap: 200px;
 		row-gap: 88px;
@@ -117,7 +148,7 @@
 		padding-top: 118px;
 		padding-bottom: 125px;
 		text-align: center;
-		height:auto;
+		height: auto;
 	}
 
 	&__title {
@@ -142,7 +173,7 @@
 	&__img {
 		img {
 			width: 100%;
-			height:100%;
+			height: 100%;
 		}
 	}
 }
@@ -233,6 +264,30 @@
 		column-gap: 30px;
 		border: 1px solid black;
 		padding: 82px 120px;
+		margin: 0px 20px;
+	}
+	@media (max-width:960px){
+		.container-testimonials {
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
+			padding:20px 50px;
+			&__avatar {
+			}
+		
+			&__content {
+			}
+		}
+		.button-testimonials {
+			margin-top: 30px;
+			margin-left: 45%;
+		}
+		.content-testimonials{
+			&__text{
+				overflow: auto;
+				height: 100px;
+			}
+		}
 	}
 }
 
@@ -241,6 +296,9 @@
 	}
 
 	&__content {
+		margin-top: 10px;
+		max-width: 698px;
+		max-height: 234px;
 	}
 }
 .content-testimonials {
@@ -290,7 +348,7 @@
 	background-color: #f6f6f6;
 
 	&__body {
-		height:auto;
+		height: auto;
 	}
 
 	&__container {
@@ -308,7 +366,7 @@
 }
 .container-results {
 	&__item {
-		width:200px;
+		width: 200px;
 	}
 
 	&__img {
