@@ -671,8 +671,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   row-gap: 100px;
-  -webkit-column-gap: 180px;
-          column-gap: 180px;
+  -webkit-column-gap: 120px;
+          column-gap: 120px;
   text-align: center;
 }
 
