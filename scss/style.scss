@@ -16,6 +16,7 @@ main {
 
 			&__img {
 				margin-bottom: 25px;
+				padding: 0px 20px;
 				img {
 					max-height: 100%;
 					max-width: 100%;
@@ -166,6 +167,7 @@ main {
 		margin-left: 47.5%;
 	}
 	&__img {
+		padding: 0px 20px;
 		img {
 			width: 100%;
 			height: 100%;
@@ -206,6 +208,7 @@ main {
 		gap: 30px 25px;
 		justify-content: center;
 		align-items: center;
+		padding: 0px 10px;
 	}
 	&__button {
 		margin-top: 27px;

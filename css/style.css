@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Asap:100,200,300,regular,500,600,700,800,900);
-
 * {
   padding: 0px;
   margin: 0px;
@@ -93,10 +92,7 @@ h6 {
   font-size: inherit;
 }
 
-.text-hd-content__button button,
-.content__button button,
-.portfolio__button button,
-.footer__button button {
+.text-hd-content__button button, .content__button button, .portfolio__button button, .footer__button button {
   background-color: #ffffff00;
   border: solid 1px #4d4d4d;
   font-size: 16px;
@@ -104,10 +100,7 @@ h6 {
   color: #4d4d4d;
 }
 
-.text-hd-content__button button:hover,
-.content__button button:hover,
-.portfolio__button button:hover,
-.footer__button button:hover {
+.text-hd-content__button button:hover, .content__button button:hover, .portfolio__button button:hover, .footer__button button:hover {
   background-color: white;
   color: #4d4d4d;
   font-weight: 600;
@@ -129,18 +122,17 @@ header {
 @media (max-width: 960px) {
   header .hd-content {
     -ms-flex-wrap: wrap-reverse;
-    flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     padding: 50px 0px 100px 0px;
   }
-
   header .content-hd__img {
+    padding: 0px 20px;
     margin-bottom: 25px;
   }
-
   header .content-hd__img img {
     max-width: 100%;
     max-height: 100%;
@@ -152,11 +144,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .top-hd {
@@ -200,7 +192,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 38px;
-  column-gap: 38px;
+          column-gap: 38px;
 }
 
 .menu__item {
@@ -228,8 +220,7 @@ header {
   transition: width 0.3s ease-out;
 }
 
-.menu__link:hover:after,
-.menu__link:focus:after {
+.menu__link:hover:after, .menu__link:focus:after {
   width: 100%;
 }
 
@@ -263,11 +254,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .content-hd__img img {
@@ -301,27 +292,24 @@ header {
 @media (max-width: 960px) {
   main .about-me {
     -ms-flex-wrap: wrap-reverse;
-    flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     row-gap: 30px;
   }
-
   main .about-me__img {
     margin-bottom: 25px;
+    padding: 0px 20px;
   }
-
   main .about-me__img img {
     max-height: 100%;
     max-width: 100%;
   }
-
   main .content__title::before {
     left: 47%;
   }
-
   main .content__text {
     max-width: 600px;
   }
@@ -332,10 +320,10 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 50px;
-  column-gap: 50px;
+          column-gap: 50px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: auto;
   padding: 110px 0px;
 }
@@ -391,8 +379,8 @@ header {
 
 .service__body {
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: auto;
 }
 
@@ -423,17 +411,17 @@ header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-column-gap: 200px;
-  column-gap: 200px;
+          column-gap: 200px;
   row-gap: 88px;
   text-align: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container-service__item {
@@ -478,6 +466,10 @@ header {
   margin-left: 47.5%;
 }
 
+.my-skills__img {
+  padding: 0px 20px;
+}
+
 .my-skills__img img {
   width: 100%;
   height: 100%;
@@ -519,14 +511,15 @@ header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px 25px;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 10px;
 }
 
 .portfolio__button {
@@ -579,7 +572,7 @@ header {
   display: flex;
   text-align: left;
   -webkit-column-gap: 30px;
-  column-gap: 30px;
+          column-gap: 30px;
   border: 1px solid black;
   padding: 82px 120px;
   margin: 0px 20px;
@@ -588,19 +581,17 @@ header {
 @media (max-width: 960px) {
   .testimonials .container-testimonials {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     padding: 20px 50px;
   }
-
   .testimonials .button-testimonials {
     margin-top: 30px;
     margin-left: 45%;
   }
-
   .testimonials .content-testimonials__text {
     overflow: auto;
     height: 100px;
@@ -642,7 +633,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 4px;
-  column-gap: 4px;
+          column-gap: 4px;
 }
 
 .button-testimonials {
@@ -679,16 +670,16 @@ header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   row-gap: 40px;
   -webkit-column-gap: 120px;
-  column-gap: 120px;
+          column-gap: 120px;
   text-align: center;
 }
 
@@ -773,15 +764,15 @@ header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-column-gap: 25px;
-  column-gap: 25px;
+          column-gap: 25px;
   row-gap: 25px;
   margin-bottom: 25px;
 }
@@ -826,8 +817,8 @@ header {
   display: flex;
   text-align: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer .bottom-footer__subscribe {
@@ -835,10 +826,10 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 10px;
-  column-gap: 10px;
+          column-gap: 10px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer .bottom-footer__title {
@@ -869,13 +860,11 @@ header {
 @media (max-width: 1170px) {
   .footer .bottom-footer__body {
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
   }
-
   .footer .bottom-footer__subscribe {
     margin: 0px 15px;
   }
-
   .footer .bottom-footer__title {
     margin: 0px 15px;
   }
@@ -892,16 +881,14 @@ header {
 @media (max-width: 490px) {
   .footer .bottom-footer__body {
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap-reverse;
-    flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
   }
-
   .footer .bottom-footer__subscribe {
     padding-bottom: 15px;
   }
-
   .footer .bottom-footer__title {
     padding-bottom: 15px;
   }
