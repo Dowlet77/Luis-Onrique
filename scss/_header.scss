@@ -5,12 +5,12 @@ header {
 			flex-wrap: wrap-reverse;
 			justify-content: center;
 			text-align: center;
-			padding:50px 0px 100px 0px;
+			padding: 50px 0px 100px 0px;
 		}
 		.content-hd {
 			&__text {
 			}
-		
+
 			&__img {
 				margin-bottom: 25px;
 				img {
@@ -48,10 +48,10 @@ header {
 		color: rgb(0, 0, 0);
 		text-transform: uppercase;
 	}
-	@media(max-width:648px){
-		.top-hd{
-			&__icon{
-				padding-left:15px;
+	@media (max-width: 648px) {
+		.top-hd {
+			&__icon {
+				padding-left: 15px;
 			}
 		}
 	}
