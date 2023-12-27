@@ -5,6 +5,9 @@
 	max-width: 1170px;
 	margin: 0 auto;
 }
+body{
+	min-width:360px;
+}
 @import "_header";
 main {
 	@media (max-width: 960px) {
@@ -16,7 +19,6 @@ main {
 
 			&__img {
 				margin-bottom: 25px;
-				padding: 0px 20px;
 				img {
 					max-height: 100%;
 					max-width: 100%;
@@ -38,7 +40,7 @@ main {
 	column-gap: 50px;
 	align-items: center;
 	height: auto;
-	padding: 110px 0px;
+	padding: 110px 20px;
 	&__img {
 		img {
 			max-height: 443px;
@@ -50,7 +52,7 @@ main {
 	&__title {
 		position: relative;
 		letter-spacing: 7px;
-		font-size: 46px;
+		font-size: 40px;
 		font-family: "Asap";
 		color: rgba(77, 77, 77, 0.8);
 		font-weight: bold;
@@ -81,6 +83,9 @@ main {
 		button {
 			width: 245px;
 			height: 50px;
+		}
+		button:hover{
+			background-color: #f6f6f6;
 		}
 	}
 }
@@ -113,7 +118,7 @@ main {
 		margin-bottom: 19px;
 		margin-left: 47.5%;
 	}
-	.service__container {
+	&__container {
 		display: flex;
 		flex-wrap: wrap;
 		column-gap: 200px;
@@ -121,6 +126,7 @@ main {
 		text-align: center;
 		justify-content: center;
 		align-items: center;
+		padding:0px 20px;
 	}
 }
 

@@ -50,19 +50,19 @@
 		}
 
 		&__message {
-			height: 207px;
-			width: 725px;
+			height: 211px;
+			width: 767px;
 			padding: 10px;
 		}
 	}
 	.name {
-		height: 60px;
-		width: 350px;
+		height: 57px;
+		width: 370px;
 		padding: 10px;
 	}
 	.email {
-		height: 60px;
-		width: 350px;
+		height: 57px;
+		width: 370px;
 		padding: 10px;
 	}
 
@@ -126,15 +126,19 @@
 			}
 		}
 	}
-	@media (max-width: 767px) {
+	@media (max-width: 800px) {
 		.form-footer {
 			&__login {
 			}
 
 			&__message {
-				height: 157px;
-				width: 354px;
-				padding: 10px;
+				width: 100%;
+			}
+			.name {
+				width: 100%;
+			}
+			.email {
+				width: 100%;
 			}
 		}
 	}

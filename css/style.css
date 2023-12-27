@@ -105,6 +105,8 @@ h6 {
   color: #4d4d4d;
   font-weight: 600;
   border: none;
+  -webkit-box-shadow: 8px 8px 21px 0px rgba(34, 60, 80, 0.12);
+          box-shadow: 8px 8px 21px 0px rgba(34, 60, 80, 0.12);
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
   transition: 0.8s;
@@ -113,6 +115,10 @@ h6 {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+}
+
+body {
+  min-width: 360px;
 }
 
 header {
@@ -127,10 +133,8 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    padding: 50px 0px 100px 0px;
   }
   header .content-hd__img {
-    padding: 0px 20px;
     margin-bottom: 25px;
   }
   header .content-hd__img img {
@@ -149,9 +153,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.top-hd {
+  padding: 0px 10px 0px 20px;
   text-align: center;
 }
 
@@ -175,12 +177,6 @@ header {
   font-family: "Lato";
   color: black;
   text-transform: uppercase;
-}
-
-@media (max-width: 648px) {
-  .top-hd .top-hd__icon {
-    padding-left: 15px;
-  }
 }
 
 .menu__body {
@@ -225,7 +221,7 @@ header {
 }
 
 .menu__burger {
-  padding: 15px 15px 0px 15px;
+  padding: 15px 10px 0px 0px;
 }
 
 .menu__burger span {
@@ -259,6 +255,16 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 50px 20px 100px 20px;
+}
+
+@media (max-width: 490px) {
+  .content-hd__text .text-hd-content__title {
+    font-size: 70px;
+  }
+  .content-hd__text .text-hd-content__min-title {
+    font-size: 18px;
+  }
 }
 
 .content-hd__img img {
@@ -274,7 +280,7 @@ header {
 }
 
 .text-hd-content__min-title {
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Asap";
   color: rgba(77, 77, 77, 0.541);
   line-height: 3.045;
@@ -289,6 +295,13 @@ header {
   margin-right: 20px;
 }
 
+@media (max-width: 385px) {
+  .text-hd-content .text-hd-content__button button {
+    width: 148px;
+    height: 50px;
+  }
+}
+
 @media (max-width: 960px) {
   main .about-me {
     -ms-flex-wrap: wrap-reverse;
@@ -301,7 +314,6 @@ header {
   }
   main .about-me__img {
     margin-bottom: 25px;
-    padding: 0px 20px;
   }
   main .about-me__img img {
     max-height: 100%;
@@ -325,7 +337,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: auto;
-  padding: 110px 0px;
+  padding: 110px 20px;
 }
 
 .about-me__img img {
@@ -336,7 +348,7 @@ header {
 .content__title {
   position: relative;
   letter-spacing: 7px;
-  font-size: 46px;
+  font-size: 40px;
   font-family: "Asap";
   color: rgba(77, 77, 77, 0.8);
   font-weight: bold;
@@ -369,6 +381,10 @@ header {
 .content__button button {
   width: 245px;
   height: 50px;
+}
+
+.content__button button:hover {
+  background-color: #f6f6f6;
 }
 
 .service {
@@ -406,7 +422,7 @@ header {
   margin-left: 47.5%;
 }
 
-.service .service__container {
+.service__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,6 +438,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0px 20px;
 }
 
 .container-service__item {
@@ -778,20 +795,20 @@ header {
 }
 
 .footer .form-footer__message {
-  height: 207px;
-  width: 725px;
+  height: 211px;
+  width: 767px;
   padding: 10px;
 }
 
 .footer .name {
-  height: 60px;
-  width: 350px;
+  height: 57px;
+  width: 370px;
   padding: 10px;
 }
 
 .footer .email {
-  height: 60px;
-  width: 350px;
+  height: 57px;
+  width: 370px;
   padding: 10px;
 }
 
@@ -870,11 +887,15 @@ header {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .footer .form-footer__message {
-    height: 157px;
-    width: 354px;
-    padding: 10px;
+    width: 100%;
+  }
+  .footer .form-footer .name {
+    width: 100%;
+  }
+  .footer .form-footer .email {
+    width: 100%;
   }
 }
 
