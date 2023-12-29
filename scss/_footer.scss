@@ -19,7 +19,7 @@
 	&__title {
 		letter-spacing: 7px;
 		font-size: 46px;
-		font-family: "Asap";
+		font-family: "Asap Bold";
 		color: rgba(255, 255, 255, 0.8);
 		font-weight: bold;
 		text-transform: uppercase;
@@ -53,17 +53,26 @@
 			height: 211px;
 			width: 767px;
 			padding: 10px;
+			font-size: 16px;
+			font-family: "Asap Regular";
+			color: rgba(33, 33, 33, 0.8);
 		}
 	}
 	.name {
 		height: 57px;
 		width: 370px;
 		padding: 10px;
+		font-size: 16px;
+		font-family: "Asap Regular";
+		color: rgba(33, 33, 33, 0.8);
 	}
 	.email {
 		height: 57px;
 		width: 370px;
 		padding: 10px;
+		font-size: 16px;
+		font-family: "Asap Regular";
+		color: rgba(33, 33, 33, 0.8); 
 	}
 
 	&__button {
@@ -77,6 +86,7 @@
 			border: 1px solid white;
 			img {
 				padding-left: 5px;
+				padding-top: 2.5px;
 			}
 		}
 	}
@@ -93,7 +103,7 @@
 		}
 		&__title {
 			font-size: 16px;
-			font-family: "Montserrat";
+			font-family: "Montserrat Regular";
 			color: rgb(255, 255, 255);
 			line-height: 4.188;
 			margin-right: 480px;
@@ -101,16 +111,21 @@
 	}
 	.subscribe-footer {
 		&__item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			background-color: #fff;
+			text-transform: uppercase;
 			width: 30px;
 			height: 30px;
-			img {
-				padding-top: 10px;
-			}
+			font-size: 16px;
+			font-family: "FontAwesome";
+			color: rgb(77, 77, 77);
+			transition: 0.5s;
 		}
 		&__item:hover {
 			background-color: rgb(43, 147, 226);
-			transition: 0.5s;
+			color: white;
 		}
 	}
 	@media (max-width: 1170px) {

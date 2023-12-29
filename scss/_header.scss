@@ -1,6 +1,6 @@
 header {
 	background-color: #e0e0e0;
-	@media (max-width: 960px) {
+	@media (max-width: 962px) {
 		.hd-content {
 			flex-wrap: wrap-reverse;
 			justify-content: center;
@@ -33,17 +33,23 @@ header {
 	}
 	&__icon {
 		padding-top: 40px;
+		img {
+			margin-bottom: 10px;
+			width: 24px;
+			height: 24px;
+		}
 	}
 
 	&__title {
 		font-size: 24px;
-		font-family: "Lato";
+		font-family: "Lato Light";
 		color: rgb(0, 0, 0);
 		text-transform: uppercase;
+		margin-bottom: 5px;
 	}
 	&__min-title {
 		font-size: 6px;
-		font-family: "Lato";
+		font-family: "Lato Regular";
 		color: rgb(0, 0, 0);
 		text-transform: uppercase;
 	}
@@ -68,6 +74,8 @@ header {
 		cursor: pointer;
 		line-height: 2;
 		text-decoration: none;
+		font-family: "Asap Regular";
+		font-style: normal;
 	}
 	&__link::after {
 		display: block;
@@ -140,14 +148,14 @@ header {
 .text-hd-content {
 	&__title {
 		font-size: 80px;
-		font-family: "Asap";
+		font-family: "Asap Medium";
 		color: rgb(77, 77, 77);
 		line-height: 0.744;
 	}
 
 	&__min-title {
 		font-size: 20px;
-		font-family: "Asap";
+		font-family: "Asap Medium";
 		color: rgba(77, 77, 77, 0.541);
 		line-height: 3.045;
 	}

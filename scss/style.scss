@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Asap:100,200,300,regular,500,600,700,800,900);
 @import "_null.scss";
 @import "_button.scss";
+@import "_fonts.scss";
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
@@ -10,7 +10,7 @@ body{
 }
 @import "_header";
 main {
-	@media (max-width: 960px) {
+	@media (max-width: 962px) {
 		.about-me {
 			flex-wrap: wrap-reverse;
 			justify-content: center;
@@ -53,7 +53,7 @@ main {
 		position: relative;
 		letter-spacing: 7px;
 		font-size: 40px;
-		font-family: "Asap";
+		font-family: "Asap Bold";
 		color: rgba(77, 77, 77, 0.8);
 		font-weight: bold;
 		line-height: 1.065;
@@ -72,7 +72,7 @@ main {
 
 	&__text {
 		font-size: 16px;
-		font-family: "Asap";
+		font-family: "Asap Regular";
 		color: rgb(77, 77, 77);
 		line-height: 1.625;
 	}
@@ -86,6 +86,7 @@ main {
 		}
 		button:hover{
 			background-color: #f6f6f6;
+			border: solid 1px #f6f6f6;
 		}
 	}
 }
@@ -101,7 +102,7 @@ main {
 	&__title {
 		letter-spacing: 7px;
 		font-size: 46px;
-		font-family: "Asap";
+		font-family: "Asap Bold";
 		color: rgba(77, 77, 77, 0.8);
 		font-weight: bold;
 		text-transform: uppercase;
@@ -141,7 +142,7 @@ main {
 
 	&__title {
 		font-size: 24px;
-		font-family: "Asap";
+		font-family: "Asap Medium";
 		color: rgb(77, 77, 77);
 	}
 }
@@ -156,7 +157,7 @@ main {
 	&__title {
 		letter-spacing: 7px;
 		font-size: 46px;
-		font-family: "Asap";
+		font-family: "Asap Bold";
 		color: rgba(77, 77, 77, 0.8);
 		font-weight: bold;
 		text-transform: uppercase;
@@ -191,7 +192,7 @@ main {
 	&__title {
 		letter-spacing: 7px;
 		font-size: 46px;
-		font-family: "Asap";
+		font-family: "Asap Bold";
 		color: rgba(77, 77, 77, 0.8);
 		font-weight: bold;
 		text-transform: uppercase;
@@ -247,7 +248,7 @@ main {
 		letter-spacing: 7px;
 		margin-top: 125px;
 		font-size: 40px;
-		font-family: "Asap";
+		font-family: "Asap Bold";
 		color: rgba(77, 77, 77, 0.8);
 		font-weight: bold;
 		text-transform: uppercase;
@@ -310,14 +311,14 @@ main {
 .content-testimonials {
 	&__title {
 		font-size: 30px;
-		font-family: "Asap";
+		font-family: "Asap Medium";
 		color: rgba(33, 33, 33, 0.902);
 		text-transform: uppercase;
 	}
 
 	&__subtitle {
 		font-size: 12px;
-		font-family: "Asap";
+		font-family: "Asap Italic";
 		color: rgba(33, 33, 33, 0.902);
 		font-style: italic;
 		text-transform: uppercase;
@@ -326,7 +327,7 @@ main {
 
 	&__text {
 		font-size: 16px;
-		font-family: "Asap";
+		font-family: "Asap Regular";
 		color: rgba(33, 33, 33, 0.6);
 		text-transform: uppercase;
 		line-height: 2;
@@ -385,7 +386,7 @@ main {
 
 	&__title {
 		font-size: 22px;
-		font-family: "Asap";
+		font-family: "Asap Medium";
 		color: rgba(33, 33, 33, 0.902);
 		text-transform: uppercase;
 		line-height: 1.455;
@@ -393,7 +394,7 @@ main {
 
 	&__subtitle {
 		font-size: 22px;
-		font-family: "Asap";
+		font-family: "Asap Regular";
 		color: rgba(33, 33, 33, 0.8);
 		text-transform: uppercase;
 		line-height: 1.455;
