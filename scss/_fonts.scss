@@ -1,72 +1,80 @@
 @font-face {
 	font-family: "Montserrat Regular";
-	src: url('../fonts/montserrat_regular.eot');
-	src: url('../fonts/montserrat_regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/montserrat_regular.woff2') format('woff2'),
-		url('../fonts/montserrat_regular.woff') format('woff'),
-		url('../fonts/montserrat_regular.ttf') format('truetype'),
-		url('../fonts/montserrat_regular.svg#montserrat_regular') format('svg');
+	src: url("../fonts/montserrat_regular.eot");
+	src:
+		url("../fonts/montserrat_regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/montserrat_regular.woff2") format("woff2"),
+		url("../fonts/montserrat_regular.woff") format("woff"),
+		url("../fonts/montserrat_regular.ttf") format("truetype"),
+		url("../fonts/montserrat_regular.svg#montserrat_regular") format("svg");
 }
 @font-face {
 	font-family: "Lato Regular";
-	src: url('../fonts/lato_regular.eot');
-	src: url('../fonts/lato_regular.eot?#iefix') format('embedded-opentype'), 
-		url('../fonts/lato_regular.woff2') format('woff2'),
-		url('../fonts/lato_regular.woff') format('woff'), 
-		url('../fonts/lato_regular.ttf') format('truetype'),
-		url('../fonts/lato_regular.svg#lato_regular') format('svg');
+	src: url("../fonts/lato_regular.eot");
+	src:
+		url("../fonts/lato_regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/lato_regular.woff2") format("woff2"),
+		url("../fonts/lato_regular.woff") format("woff"),
+		url("../fonts/lato_regular.ttf") format("truetype"),
+		url("../fonts/lato_regular.svg#lato_regular") format("svg");
 }
 @font-face {
 	font-family: "Lato Light";
-	src: url('../fonts/lato_light.eot');
-	src: url('../fonts/lato_light.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/lato_light.woff2') format('woff2'),
-		url('../fonts/lato_light.woff') format('woff'), 
-		url('../fonts/lato_light.ttf') format('truetype'),
-		url('../fonts/lato_light.svg#lato_light') format('svg');
+	src: url("../fonts/lato_light.eot");
+	src:
+		url("../fonts/lato_light.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/lato_light.woff2") format("woff2"),
+		url("../fonts/lato_light.woff") format("woff"),
+		url("../fonts/lato_light.ttf") format("truetype"),
+		url("../fonts/lato_light.svg#lato_light") format("svg");
 }
 @font-face {
 	font-family: "Asap Regular";
-	src: url('../fonts/asap_regular.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/asap_regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/asap_regular.woff2') format('woff2'),
-		url('../fonts/asap_regular.woff') format('woff'), 
-		url('../fonts/asap_regular.ttf') format('truetype'),
-		url('../fonts/asap_regular.svg#asap_regular') format('svg'); 
+	src: url("../fonts/asap_regular.eot"); /* IE 9 Compatibility Mode */
+	src:
+		url("../fonts/asap_regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/asap_regular.woff2") format("woff2"),
+		url("../fonts/asap_regular.woff") format("woff"),
+		url("../fonts/asap_regular.ttf") format("truetype"),
+		url("../fonts/asap_regular.svg#asap_regular") format("svg");
 }
 @font-face {
 	font-family: "Asap Medium";
-	src: url('../fonts/asap_medium.eot'); 
-	src: url('../fonts/asap_medium.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/asap_medium.woff2') format('woff2'),
-		url('../fonts/asap_medium.woff') format('woff'), 
-		url('../fonts/asap_medium.ttf') format('truetype'),
-		url('../fonts/asap_medium.svg#asap_medium') format('svg'); 
+	src: url("../fonts/asap_medium.eot");
+	src:
+		url("../fonts/asap_medium.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/asap_medium.woff2") format("woff2"),
+		url("../fonts/asap_medium.woff") format("woff"),
+		url("../fonts/asap_medium.ttf") format("truetype"),
+		url("../fonts/asap_medium.svg#asap_medium") format("svg");
 }
 @font-face {
 	font-family: "Asap Italic";
-	src: url('../fonts/asap_italic.eot'); 
-	src: url('../fonts/asap_italic.eot?#iefix') format('embedded-opentype'), 
-		url('../fonts/asap_italic.woff2') format('woff2'),
-		url('../fonts/asap_italic.woff') format('woff'),
-		url('../fonts/asap_italic.ttf') format('truetype'), 
-		url('../fonts/asap_italic.svg#asap_italic') format('svg'); 
+	src: url("../fonts/asap_italic.eot");
+	src:
+		url("../fonts/asap_italic.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/asap_italic.woff2") format("woff2"),
+		url("../fonts/asap_italic.woff") format("woff"),
+		url("../fonts/asap_italic.ttf") format("truetype"),
+		url("../fonts/asap_italic.svg#asap_italic") format("svg");
 }
 @font-face {
 	font-family: "Asap Bold";
-	src: url('../fonts/asap_bold.eot'); 
-	src: url('../fonts/asap_bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/asap_bold.woff2') format('woff2'), 
-		url('../fonts/asap_bold.woff') format('woff'), 
-		url('../fonts/asap_bold.ttf') format('truetype'), 
-		url('../fonts/asap_bold.svg#asap_bold') format('svg'); 
+	src: url("../fonts/asap_bold.eot");
+	src:
+		url("../fonts/asap_bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/asap_bold.woff2") format("woff2"),
+		url("../fonts/asap_bold.woff") format("woff"),
+		url("../fonts/asap_bold.ttf") format("truetype"),
+		url("../fonts/asap_bold.svg#asap_bold") format("svg");
 }
 @font-face {
-	font-family: 'FontAwesome Regular';
-	src: url('../fonts/fontawesome5freeregular.eot');
-	src: url('../fonts/fontawesome5freeregular.eot?#iefix') format('embedded-opentype'), 
-		url('../fonts/fontawesome5freeregular.woff2') format('woff2'), 
-		url('../fonts/fontawesome5freeregular.woff') format('woff'), 
-		url('../fonts/fontawesome5freeregular.ttf') format('truetype'), 
-		url('../fonts/fontawesome5freeregular.svg#fontawesome5freeregular') format('svg');
+	font-family: "FontAwesome Regular";
+	src: url("../fonts/fontawesome5freeregular.eot");
+	src:
+		url("../fonts/fontawesome5freeregular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/fontawesome5freeregular.woff2") format("woff2"),
+		url("../fonts/fontawesome5freeregular.woff") format("woff"),
+		url("../fonts/fontawesome5freeregular.ttf") format("truetype"),
+		url("../fonts/fontawesome5freeregular.svg#fontawesome5freeregular") format("svg");
 }

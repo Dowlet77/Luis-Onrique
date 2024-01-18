@@ -5,8 +5,8 @@
 	max-width: 1170px;
 	margin: 0 auto;
 }
-body{
-	min-width:360px;
+body {
+	min-width: 360px;
 }
 @import "_header";
 main {
@@ -84,7 +84,7 @@ main {
 			width: 245px;
 			height: 50px;
 		}
-		button:hover{
+		button:hover {
 			background-color: #f6f6f6;
 			border: solid 1px #f6f6f6;
 		}
@@ -127,7 +127,7 @@ main {
 		text-align: center;
 		justify-content: center;
 		align-items: center;
-		padding:0px 20px;
+		padding: 0px 20px;
 	}
 }
 

@@ -154,7 +154,7 @@ h6 {
 }
 
 @font-face {
-  font-family: 'FontAwesome Regular';
+  font-family: "FontAwesome Regular";
   src: url("../fonts/fontawesome5freeregular.eot");
   src: url("../fonts/fontawesome5freeregular.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome5freeregular.woff2") format("woff2"), url("../fonts/fontawesome5freeregular.woff") format("woff"), url("../fonts/fontawesome5freeregular.ttf") format("truetype"), url("../fonts/fontawesome5freeregular.svg#fontawesome5freeregular") format("svg");
 }
