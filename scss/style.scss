@@ -27,7 +27,6 @@ main {
 		}
 		.content {
 			&__title::before {
-				left: 47%;
 			}
 			&__text {
 				max-width: 600px;
@@ -62,12 +61,13 @@ main {
 		position: absolute;
 		bottom: 90px;
 		display: block;
-		left: 0;
 		width: 55px;
 		height: 4px;
 		background-color: rgba(77, 77, 77, 0.8);
 		content: "";
 		margin-bottom: 19px;
+		transform: translate(-50%, 0px);
+		left: 50%;
 	}
 
 	&__text {
@@ -101,6 +101,7 @@ main {
 
 	&__title {
 		letter-spacing: 7px;
+		position: relative;
 		font-size: 46px;
 		font-family: "Asap Bold";
 		color: rgba(77, 77, 77, 0.8);
@@ -112,12 +113,15 @@ main {
 	}
 	&__title::before {
 		display: block;
+		position: absolute;
 		width: 60px;
 		height: 4px;
 		background-color: rgba(77, 77, 77, 0.8);
 		content: "";
-		margin-bottom: 19px;
-		margin-left: 47.5%;
+		bottom: 80px;
+		
+		transform: translate(-50%, 0px);
+		left: 50%;
 	}
 	&__container {
 		display: flex;
@@ -163,6 +167,7 @@ main {
 		text-transform: uppercase;
 		line-height: 1.065;
 		margin-bottom: 70px;
+		position: relative;
 	}
 	&__title::before {
 		display: block;
@@ -170,8 +175,10 @@ main {
 		height: 4px;
 		background-color: rgba(77, 77, 77, 0.8);
 		content: "";
-		margin-bottom: 19px;
-		margin-left: 47.5%;
+		position: absolute;
+		bottom: 80px;
+		transform: translate(-50%, 0px);
+		left: 50%;
 	}
 	&__img {
 		padding: 0px 20px;
@@ -198,6 +205,7 @@ main {
 		text-transform: uppercase;
 		line-height: 1.065;
 		margin-bottom: 70px;
+		position: relative;
 	}
 	&__title::before {
 		display: block;
@@ -205,8 +213,10 @@ main {
 		height: 4px;
 		background-color: rgba(77, 77, 77, 0.8);
 		content: "";
-		margin-bottom: 19px;
-		margin-left: 47.5%;
+		position: absolute;
+		bottom: 80px;
+		transform: translate(-50%, 0px);
+		left: 50%;
 	}
 
 	&__container {
@@ -254,6 +264,7 @@ main {
 		text-transform: uppercase;
 		line-height: 1.065;
 		margin-bottom: 70px;
+		position: relative;
 	}
 	&__title::before {
 		display: block;
@@ -261,8 +272,10 @@ main {
 		height: 4px;
 		background-color: rgba(77, 77, 77, 0.8);
 		content: "";
-		margin-bottom: 19px;
-		margin-left: 47.5%;
+		position: absolute;
+		bottom: 80px;
+		transform: translate(-50%, 0px);
+		left: 50%;
 	}
 
 	&__container {

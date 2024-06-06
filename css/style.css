@@ -91,20 +91,18 @@ h6 {
   font-size: inherit;
 }
 
-.text-hd-content__button button, .content__button button, .portfolio__button button, .footer__button button {
-  background-color: #ffffff00;
+.footer__button button, .portfolio__button button, .content__button button, .text-hd-content__button button {
+  background-color: rgba(255, 255, 255, 0);
   border: solid 1px #4d4d4d;
   font-size: 16px;
   font-family: "Asap Medium";
-  color: #4d4d4d;
+  color: rgb(77, 77, 77);
   -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
 }
-
-.text-hd-content__button button:hover, .content__button button:hover, .portfolio__button button:hover, .footer__button button:hover {
+.footer__button button:hover, .portfolio__button button:hover, .content__button button:hover, .text-hd-content__button button:hover {
   background-color: white;
-  color: #4d4d4d;
+  color: rgb(77, 77, 77);
   border: solid 1px white;
   -webkit-box-shadow: 8px 8px 21px 0px rgba(34, 60, 80, 0.12);
           box-shadow: 8px 8px 21px 0px rgba(34, 60, 80, 0.12);
@@ -115,50 +113,41 @@ h6 {
   src: url("../fonts/montserrat_regular.eot");
   src: url("../fonts/montserrat_regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat_regular.woff2") format("woff2"), url("../fonts/montserrat_regular.woff") format("woff"), url("../fonts/montserrat_regular.ttf") format("truetype"), url("../fonts/montserrat_regular.svg#montserrat_regular") format("svg");
 }
-
 @font-face {
   font-family: "Lato Regular";
   src: url("../fonts/lato_regular.eot");
   src: url("../fonts/lato_regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lato_regular.woff2") format("woff2"), url("../fonts/lato_regular.woff") format("woff"), url("../fonts/lato_regular.ttf") format("truetype"), url("../fonts/lato_regular.svg#lato_regular") format("svg");
 }
-
 @font-face {
   font-family: "Lato Light";
   src: url("../fonts/lato_light.eot");
   src: url("../fonts/lato_light.eot?#iefix") format("embedded-opentype"), url("../fonts/lato_light.woff2") format("woff2"), url("../fonts/lato_light.woff") format("woff"), url("../fonts/lato_light.ttf") format("truetype"), url("../fonts/lato_light.svg#lato_light") format("svg");
 }
-
 @font-face {
   font-family: "Asap Regular";
-  src: url("../fonts/asap_regular.eot");
-  /* IE 9 Compatibility Mode */
+  src: url("../fonts/asap_regular.eot"); /* IE 9 Compatibility Mode */
   src: url("../fonts/asap_regular.eot?#iefix") format("embedded-opentype"), url("../fonts/asap_regular.woff2") format("woff2"), url("../fonts/asap_regular.woff") format("woff"), url("../fonts/asap_regular.ttf") format("truetype"), url("../fonts/asap_regular.svg#asap_regular") format("svg");
 }
-
 @font-face {
   font-family: "Asap Medium";
   src: url("../fonts/asap_medium.eot");
   src: url("../fonts/asap_medium.eot?#iefix") format("embedded-opentype"), url("../fonts/asap_medium.woff2") format("woff2"), url("../fonts/asap_medium.woff") format("woff"), url("../fonts/asap_medium.ttf") format("truetype"), url("../fonts/asap_medium.svg#asap_medium") format("svg");
 }
-
 @font-face {
   font-family: "Asap Italic";
   src: url("../fonts/asap_italic.eot");
   src: url("../fonts/asap_italic.eot?#iefix") format("embedded-opentype"), url("../fonts/asap_italic.woff2") format("woff2"), url("../fonts/asap_italic.woff") format("woff"), url("../fonts/asap_italic.ttf") format("truetype"), url("../fonts/asap_italic.svg#asap_italic") format("svg");
 }
-
 @font-face {
   font-family: "Asap Bold";
   src: url("../fonts/asap_bold.eot");
   src: url("../fonts/asap_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/asap_bold.woff2") format("woff2"), url("../fonts/asap_bold.woff") format("woff"), url("../fonts/asap_bold.ttf") format("truetype"), url("../fonts/asap_bold.svg#asap_bold") format("svg");
 }
-
 @font-face {
   font-family: "FontAwesome Regular";
   src: url("../fonts/fontawesome5freeregular.eot");
   src: url("../fonts/fontawesome5freeregular.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome5freeregular.woff2") format("woff2"), url("../fonts/fontawesome5freeregular.woff") format("woff"), url("../fonts/fontawesome5freeregular.ttf") format("truetype"), url("../fonts/fontawesome5freeregular.svg#fontawesome5freeregular") format("svg");
 }
-
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -171,7 +160,6 @@ body {
 header {
   background-color: #e0e0e0;
 }
-
 @media (max-width: 962px) {
   header .hd-content {
     -ms-flex-wrap: wrap-reverse;
@@ -207,48 +195,42 @@ header {
 .top-hd__link {
   text-decoration: none;
 }
-
 .top-hd__icon {
   padding-top: 40px;
 }
-
 .top-hd__icon img {
   margin-bottom: 10px;
   width: 24px;
   height: 24px;
 }
-
 .top-hd__title {
   font-size: 24px;
   font-family: "Lato Light";
-  color: black;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   margin-bottom: 5px;
 }
-
 .top-hd__min-title {
   font-size: 6px;
   font-family: "Lato Regular";
-  color: black;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
 }
 
 .menu__body {
   padding: 10px;
 }
-
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 38px;
+     -moz-column-gap: 38px;
           column-gap: 38px;
 }
-
 .menu__item {
   list-style: none;
 }
-
 .menu__link {
   position: relative;
   color: #4d4d4d;
@@ -258,7 +240,6 @@ header {
   font-family: "Asap Regular";
   font-style: normal;
 }
-
 .menu__link::after {
   display: block;
   position: absolute;
@@ -268,18 +249,14 @@ header {
   background-color: #4d4d4d;
   content: "";
   -webkit-transition: width 0.3s ease-out;
-  -o-transition: width 0.3s ease-out;
   transition: width 0.3s ease-out;
 }
-
 .menu__link:hover:after, .menu__link:focus:after {
   width: 100%;
 }
-
 .menu__burger {
   padding: 15px 10px 0px 0px;
 }
-
 .menu__burger span {
   display: block;
   width: 35px;
@@ -288,13 +265,11 @@ header {
   content: "";
   margin-bottom: 5px;
 }
-
 @media (max-width: 648px) {
   .menu .menu__body {
     display: none;
   }
 }
-
 @media (min-width: 648px) {
   .menu .menu__burger {
     display: none;
@@ -322,7 +297,6 @@ header {
     font-size: 18px;
   }
 }
-
 .content-hd__img img {
   max-width: 575px;
   max-height: 641px;
@@ -331,29 +305,25 @@ header {
 .text-hd-content__title {
   font-size: 80px;
   font-family: "Asap Medium";
-  color: #4d4d4d;
+  color: rgb(77, 77, 77);
   line-height: 0.744;
 }
-
 .text-hd-content__min-title {
   font-size: 20px;
   font-family: "Asap Medium";
   color: rgba(77, 77, 77, 0.541);
   line-height: 3.045;
 }
-
 .text-hd-content__button button {
   width: 160px;
   height: 50px;
 }
-
 .text-hd-content__button button:nth-child(1) {
   margin-right: 20px;
 }
-
 @media (max-width: 385px) {
   .text-hd-content .text-hd-content__button button {
-    width: 148px;
+    width: 128px;
     height: 50px;
   }
 }
@@ -375,9 +345,6 @@ header {
     max-height: 100%;
     max-width: 100%;
   }
-  main .content__title::before {
-    left: 47%;
-  }
   main .content__text {
     max-width: 600px;
   }
@@ -388,6 +355,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
           column-gap: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -395,7 +363,6 @@ header {
   height: auto;
   padding: 110px 20px;
 }
-
 .about-me__img img {
   max-height: 443px;
   max-width: 571px;
@@ -410,35 +377,33 @@ header {
   font-weight: bold;
   line-height: 1.065;
 }
-
 .content__title::before {
   position: absolute;
   bottom: 90px;
   display: block;
-  left: 0;
   width: 55px;
   height: 4px;
   background-color: rgba(77, 77, 77, 0.8);
   content: "";
   margin-bottom: 19px;
+  -webkit-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  left: 50%;
 }
-
 .content__text {
   font-size: 16px;
   font-family: "Asap Regular";
-  color: #4d4d4d;
+  color: rgb(77, 77, 77);
   line-height: 1.625;
 }
-
 .content__button {
   margin-top: 38px;
 }
-
 .content__button button {
   width: 245px;
   height: 50px;
 }
-
 .content__button button:hover {
   background-color: #f6f6f6;
   border: solid 1px #f6f6f6;
@@ -449,16 +414,15 @@ header {
   padding-top: 142px;
   padding-bottom: 120px;
 }
-
 .service__body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: auto;
 }
-
 .service__title {
   letter-spacing: 7px;
+  position: relative;
   font-size: 46px;
   font-family: "Asap Bold";
   color: rgba(77, 77, 77, 0.8);
@@ -468,17 +432,19 @@ header {
   text-align: center;
   margin-bottom: 70px;
 }
-
 .service__title::before {
   display: block;
+  position: absolute;
   width: 60px;
   height: 4px;
   background-color: rgba(77, 77, 77, 0.8);
   content: "";
-  margin-bottom: 19px;
-  margin-left: 47.5%;
+  bottom: 80px;
+  -webkit-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  left: 50%;
 }
-
 .service__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -486,6 +452,7 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-column-gap: 200px;
+     -moz-column-gap: 200px;
           column-gap: 200px;
   row-gap: 88px;
   text-align: center;
@@ -501,15 +468,13 @@ header {
 .container-service__item {
   width: 200px;
 }
-
 .container-service__icon {
   margin-bottom: 20px;
 }
-
 .container-service__title {
   font-size: 24px;
   font-family: "Asap Medium";
-  color: #4d4d4d;
+  color: rgb(77, 77, 77);
 }
 
 .my-skills__body {
@@ -518,7 +483,6 @@ header {
   text-align: center;
   height: auto;
 }
-
 .my-skills__title {
   letter-spacing: 7px;
   font-size: 46px;
@@ -528,22 +492,24 @@ header {
   text-transform: uppercase;
   line-height: 1.065;
   margin-bottom: 70px;
+  position: relative;
 }
-
 .my-skills__title::before {
   display: block;
   width: 60px;
   height: 4px;
   background-color: rgba(77, 77, 77, 0.8);
   content: "";
-  margin-bottom: 19px;
-  margin-left: 47.5%;
+  position: absolute;
+  bottom: 80px;
+  -webkit-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  left: 50%;
 }
-
 .my-skills__img {
   padding: 0px 20px;
 }
-
 .my-skills__img img {
   width: 100%;
   height: 100%;
@@ -552,13 +518,11 @@ header {
 .portfolio {
   background-color: #f6f6f6;
 }
-
 .portfolio__body {
   text-align: center;
   padding-top: 150px;
   height: auto;
 }
-
 .portfolio__title {
   letter-spacing: 7px;
   font-size: 46px;
@@ -568,18 +532,21 @@ header {
   text-transform: uppercase;
   line-height: 1.065;
   margin-bottom: 70px;
+  position: relative;
 }
-
 .portfolio__title::before {
   display: block;
   width: 60px;
   height: 4px;
   background-color: rgba(77, 77, 77, 0.8);
   content: "";
-  margin-bottom: 19px;
-  margin-left: 47.5%;
+  position: absolute;
+  bottom: 80px;
+  -webkit-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  left: 50%;
 }
-
 .portfolio__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -595,12 +562,10 @@ header {
           align-items: center;
   padding: 0px 10px;
 }
-
 .portfolio__button {
   margin-top: 27px;
   padding-bottom: 123px;
 }
-
 .portfolio__button button {
   height: 50px;
   width: 190px;
@@ -617,7 +582,6 @@ header {
   height: 711px;
   text-align: center;
 }
-
 .testimonials__title {
   letter-spacing: 7px;
   margin-top: 125px;
@@ -628,30 +592,33 @@ header {
   text-transform: uppercase;
   line-height: 1.065;
   margin-bottom: 70px;
+  position: relative;
 }
-
 .testimonials__title::before {
   display: block;
   width: 60px;
   height: 4px;
   background-color: rgba(77, 77, 77, 0.8);
   content: "";
-  margin-bottom: 19px;
-  margin-left: 47.5%;
+  position: absolute;
+  bottom: 80px;
+  -webkit-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  left: 50%;
 }
-
 .testimonials__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: left;
   -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
           column-gap: 30px;
   border: 1px solid black;
   padding: 82px 120px;
   margin: 0px 20px;
 }
-
 @media (max-width: 960px) {
   .testimonials .container-testimonials {
     -ms-flex-wrap: wrap;
@@ -684,7 +651,6 @@ header {
   color: rgba(33, 33, 33, 0.902);
   text-transform: uppercase;
 }
-
 .content-testimonials__subtitle {
   font-size: 12px;
   font-family: "Asap Italic";
@@ -693,7 +659,6 @@ header {
   text-transform: uppercase;
   line-height: 3;
 }
-
 .content-testimonials__text {
   font-size: 16px;
   font-family: "Asap Regular";
@@ -701,12 +666,12 @@ header {
   text-transform: uppercase;
   line-height: 2;
 }
-
 .content-testimonials__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
           column-gap: 4px;
 }
 
@@ -714,16 +679,13 @@ header {
   margin-top: 60px;
   margin-left: 35%;
 }
-
 .button-testimonials__item {
   height: 12px;
   width: 12px;
   border: 1px solid black;
   -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
 }
-
 .button-testimonials__item:hover {
   background-color: black;
 }
@@ -731,11 +693,9 @@ header {
 .results {
   background-color: #f6f6f6;
 }
-
 .results__body {
   height: auto;
 }
-
 .results__container {
   background-color: #f6f6f6;
   padding-top: 75px;
@@ -753,6 +713,7 @@ header {
           align-items: center;
   row-gap: 40px;
   -webkit-column-gap: 120px;
+     -moz-column-gap: 120px;
           column-gap: 120px;
   text-align: center;
 }
@@ -760,16 +721,13 @@ header {
 .container-results__item {
   width: 200px;
 }
-
 .container-results__img {
   margin-bottom: 20px;
 }
-
 .container-results__img img {
   height: 98px;
   width: 98px;
 }
-
 .container-results__title {
   font-size: 22px;
   font-family: "Asap Medium";
@@ -777,7 +735,6 @@ header {
   text-transform: uppercase;
   line-height: 1.455;
 }
-
 .container-results__subtitle {
   font-size: 22px;
   font-family: "Asap Regular";
@@ -791,14 +748,12 @@ header {
   background-size: cover;
   background-position: center;
 }
-
 .footer__body {
   margin-top: 154px;
   padding-top: 120px;
   height: auto;
   text-align: center;
 }
-
 .footer__line {
   display: block;
   width: 100%;
@@ -807,7 +762,6 @@ header {
   content: "";
   margin-bottom: 19px;
 }
-
 .footer__title {
   letter-spacing: 7px;
   font-size: 46px;
@@ -817,23 +771,25 @@ header {
   text-transform: uppercase;
   line-height: 1.065;
   margin-bottom: 70px;
+  position: relative;
 }
-
 .footer__title::before {
   display: block;
   width: 60px;
   height: 4px;
   background-color: rgba(255, 255, 255, 0.8);
   content: "";
-  margin-bottom: 19px;
-  margin-left: 47.5%;
+  position: absolute;
+  bottom: 80px;
+  -webkit-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  left: 50%;
 }
-
 .footer__form {
   padding: 20px;
   gap: 30px;
 }
-
 .footer .form-footer__login {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -847,11 +803,11 @@ header {
       -ms-flex-align: center;
           align-items: center;
   -webkit-column-gap: 25px;
+     -moz-column-gap: 25px;
           column-gap: 25px;
   row-gap: 25px;
   margin-bottom: 25px;
 }
-
 .footer .form-footer__message {
   height: 211px;
   width: 767px;
@@ -860,7 +816,6 @@ header {
   font-family: "Asap Regular";
   color: rgba(33, 33, 33, 0.8);
 }
-
 .footer .name {
   height: 57px;
   width: 370px;
@@ -869,7 +824,6 @@ header {
   font-family: "Asap Regular";
   color: rgba(33, 33, 33, 0.8);
 }
-
 .footer .email {
   height: 57px;
   width: 370px;
@@ -878,24 +832,20 @@ header {
   font-family: "Asap Regular";
   color: rgba(33, 33, 33, 0.8);
 }
-
 .footer__button {
   margin-top: 30px;
   margin-bottom: 60px;
 }
-
 .footer__button button {
   height: 50px;
   width: 124px;
   color: white;
   border: 1px solid white;
 }
-
 .footer__button button img {
   padding-left: 5px;
   padding-top: 2.5px;
 }
-
 .footer .bottom-footer__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -905,26 +855,24 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .footer .bottom-footer__subscribe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
           column-gap: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-
 .footer .bottom-footer__title {
   font-size: 16px;
   font-family: "Montserrat Regular";
-  color: white;
+  color: rgb(255, 255, 255);
   line-height: 4.188;
   margin-right: 480px;
 }
-
 .footer .subscribe-footer__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -941,17 +889,14 @@ header {
   height: 30px;
   font-size: 16px;
   font-family: "FontAwesome";
-  color: #4d4d4d;
+  color: rgb(77, 77, 77);
   -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
 }
-
 .footer .subscribe-footer__item:hover {
-  background-color: #2b93e2;
+  background-color: rgb(43, 147, 226);
   color: white;
 }
-
 @media (max-width: 1170px) {
   .footer .bottom-footer__body {
     -ms-flex-pack: distribute;
@@ -964,8 +909,7 @@ header {
     margin: 0px 15px;
   }
 }
-
-@media (max-width: 800px) {
+@media (max-width: 805px) {
   .footer .form-footer__message {
     width: 100%;
   }
@@ -976,7 +920,6 @@ header {
     width: 100%;
   }
 }
-
 @media (max-width: 490px) {
   .footer .bottom-footer__body {
     -webkit-box-pack: center;
