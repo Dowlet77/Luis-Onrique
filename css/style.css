@@ -633,6 +633,10 @@ header {
   height: 100%;
 }
 
+.testimonials .swiper-pagination-bullet {
+  background-color: black;
+  border-radius: 0;
+}
 .testimonials__body {
   height: 711px;
   text-align: center;
@@ -684,10 +688,6 @@ header {
     text-align: center;
     padding: 20px 50px;
   }
-  .testimonials .button-testimonials {
-    margin-top: 30px;
-    margin-left: 45%;
-  }
   .testimonials .content-testimonials__text {
     overflow: auto;
     height: 100px;
@@ -720,14 +720,6 @@ header {
   color: rgba(33, 33, 33, 0.6);
   text-transform: uppercase;
   line-height: 2;
-}
-.content-testimonials__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 4px;
-     -moz-column-gap: 4px;
-          column-gap: 4px;
 }
 
 .button-testimonials {

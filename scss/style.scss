@@ -249,6 +249,10 @@ main {
 	}
 }
 .testimonials {
+	.swiper-pagination-bullet{
+		background-color: black;
+		border-radius: 0;
+	}
 	&__body {
 		height: 711px;
 		text-align: center;
@@ -298,10 +302,6 @@ main {
 			&__content {
 			}
 		}
-		.button-testimonials {
-			margin-top: 30px;
-			margin-left: 45%;
-		}
 		.content-testimonials {
 			&__text {
 				overflow: auto;
@@ -344,11 +344,6 @@ main {
 		color: rgba(33, 33, 33, 0.6);
 		text-transform: uppercase;
 		line-height: 2;
-	}
-
-	&__button {
-		display: flex;
-		column-gap: 4px;
 	}
 }
 .button-testimonials {

@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luis Oenrique</title>
     <link rel="icon" href="img/m.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
 
 
 </head>
@@ -42,10 +43,14 @@
                     <nav class="burger-menu__body">
                         <ul class="burger-menu__list">
                             <li class="burger-menu__item"><a href="index.html" class="burger-menu__link">HOME</a></li>
-                            <li class="burger-menu__item"><a href="html/About.html" class="burger-menu__link">ABOUT</a></li>
-                            <li class="burger-menu__item"><a href="html/service.html" class="burger-menu__link">SERVICE</a></li>
-                            <li class="burger-menu__item"><a href="html/portfolio.html" class="burger-menu__link">PORTFOLIO</a></li>
-                            <li class="burger-menu__item"><a href="html/testimonuals.html" class="burger-menu__link">CONTACT</a></li>
+                            <li class="burger-menu__item"><a href="html/About.html" class="burger-menu__link">ABOUT</a>
+                            </li>
+                            <li class="burger-menu__item"><a href="html/service.html"
+                                    class="burger-menu__link">SERVICE</a></li>
+                            <li class="burger-menu__item"><a href="html/portfolio.html"
+                                    class="burger-menu__link">PORTFOLIO</a></li>
+                            <li class="burger-menu__item"><a href="html/testimonuals.html"
+                                    class="burger-menu__link">CONTACT</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -193,29 +198,73 @@
                 <div class="testimonials__title">
                     TESTIMONIALS
                 </div>
-                <div class="testimonials__container container-testimonials">
-                    <div class="container-testimonials__avatar">
-                        <img src="img/avatar.png" alt="...">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonials__container container-testimonials">
+                                <div class="container-testimonials__avatar">
+                                    <img src="img/avatar.png" alt="...">
+                                </div>
+                                <div class="container-testimonials__content content-testimonials">
+                                    <div class="content-testimonials__title">
+                                        Limara tusi
+                                    </div>
+                                    <div class="content-testimonials__subtitle">
+                                        CEO, RanDOM COMPANY
+                                    </div>
+                                    <div class="content-testimonials__text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                                        natoque penatibus et magnis dis parturient montes, nascetur
+                                        ridiculus mus. Donec quam felis, ultricies nec,
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials__container container-testimonials">
+                                <div class="container-testimonials__avatar">
+                                    <img src="img/avatar.png" alt="...">
+                                </div>
+                                <div class="container-testimonials__content content-testimonials">
+                                    <div class="content-testimonials__title">
+                                        Limara tusi
+                                    </div>
+                                    <div class="content-testimonials__subtitle">
+                                        CEO, RanDOM COMPANY
+                                    </div>
+                                    <div class="content-testimonials__text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                                        natoque penatibus et magnis dis parturient montes, nascetur
+                                        ridiculus mus. Donec quam felis, ultricies nec,
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials__container container-testimonials">
+                                <div class="container-testimonials__avatar">
+                                    <img src="img/avatar.png" alt="...">
+                                </div>
+                                <div class="container-testimonials__content content-testimonials">
+                                    <div class="content-testimonials__title">
+                                        Limara tusi
+                                    </div>
+                                    <div class="content-testimonials__subtitle">
+                                        CEO, RanDOM COMPANY
+                                    </div>
+                                    <div class="content-testimonials__text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                                        natoque penatibus et magnis dis parturient montes, nascetur
+                                        ridiculus mus. Donec quam felis, ultricies nec,
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="container-testimonials__content content-testimonials">
-                        <div class="content-testimonials__title">
-                            Limara tusi
-                        </div>
-                        <div class="content-testimonials__subtitle">
-                            CEO, RanDOM COMPANY
-                        </div>
-                        <div class="content-testimonials__text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                            natoque penatibus et magnis dis parturient montes, nascetur
-                            ridiculus mus. Donec quam felis, ultricies nec,
-                        </div>
-                        <div class="content-testimonials__button button-testimonials">
-                            <div class="button-testimonials__item"></div>
-                            <div class="button-testimonials__item"></div>
-                            <div class="button-testimonials__item"></div>
-                        </div>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -314,6 +363,7 @@
         </div>
         </div>
     </footer>
+    <script src="JS/swiper-bundle.min.js"></script>
     <script src="JS/d.js"></script>
 </body>
 
