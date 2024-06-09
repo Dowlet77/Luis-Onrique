@@ -249,6 +249,18 @@ main {
 	}
 }
 .testimonials {
+	.swiper-button-next, .swiper-button-prev{
+		color: black;
+		@media(max-width:550px){
+			display: none;
+		}
+	}
+	.swiper-button-prev{
+		margin-left: 20px;
+	}
+	.swiper-button-next{
+		margin-right: 20px;
+	}
 	.swiper-pagination-bullet{
 		background-color: black;
 		border-radius: 0;

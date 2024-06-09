@@ -633,6 +633,20 @@ header {
   height: 100%;
 }
 
+.testimonials .swiper-button-next, .testimonials .swiper-button-prev {
+  color: black;
+}
+@media (max-width: 550px) {
+  .testimonials .swiper-button-next, .testimonials .swiper-button-prev {
+    display: none;
+  }
+}
+.testimonials .swiper-button-prev {
+  margin-left: 20px;
+}
+.testimonials .swiper-button-next {
+  margin-right: 20px;
+}
 .testimonials .swiper-pagination-bullet {
   background-color: black;
   border-radius: 0;
