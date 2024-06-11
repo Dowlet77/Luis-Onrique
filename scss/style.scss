@@ -5,6 +5,25 @@
 	max-width: 1170px;
 	margin: 0 auto;
 }
+.back-to-top {
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	display: none;
+	font-size: 24px;
+	color: #fff;
+	background: #c6c3c3;
+	padding: 10px 10px;
+	border-radius: 5px;
+	transition: all 0.8s;
+	cursor: pointer;
+	z-index: 1000;
+}
+.back-to-top:hover {
+	background: #b8b4b4;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.673);
+}
 body {
 	min-width: 360px;
 }
@@ -68,7 +87,7 @@ main {
 		margin-bottom: 19px;
 		transform: translate(-50%, 0px);
 		left: 50%;
-		@media(min-width:962px){
+		@media (min-width: 962px) {
 			left: 7%;
 		}
 	}
@@ -122,7 +141,7 @@ main {
 		background-color: rgba(77, 77, 77, 0.8);
 		content: "";
 		bottom: 80px;
-		
+
 		transform: translate(-50%, 0px);
 		left: 50%;
 	}
@@ -252,19 +271,20 @@ main {
 	}
 }
 .testimonials {
-	.swiper-button-next, .swiper-button-prev{
+	.swiper-button-next,
+	.swiper-button-prev {
 		color: black;
-		@media(max-width:550px){
+		@media (max-width: 550px) {
 			display: none;
 		}
 	}
-	.swiper-button-prev{
+	.swiper-button-prev {
 		margin-left: 20px;
 	}
-	.swiper-button-next{
+	.swiper-button-next {
 		margin-right: 20px;
 	}
-	.swiper-pagination-bullet{
+	.swiper-pagination-bullet {
 		background-color: black;
 		border-radius: 0;
 	}

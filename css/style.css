@@ -153,6 +153,28 @@ h6 {
   margin: 0 auto;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  background: #c6c3c3;
+  padding: 10px 10px;
+  border-radius: 5px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  background: #b8b4b4;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.673);
+}
+
 body {
   min-width: 360px;
 }
@@ -638,11 +660,13 @@ header {
   height: 100%;
 }
 
-.testimonials .swiper-button-next, .testimonials .swiper-button-prev {
+.testimonials .swiper-button-next,
+.testimonials .swiper-button-prev {
   color: black;
 }
 @media (max-width: 550px) {
-  .testimonials .swiper-button-next, .testimonials .swiper-button-prev {
+  .testimonials .swiper-button-next,
+  .testimonials .swiper-button-prev {
     display: none;
   }
 }
