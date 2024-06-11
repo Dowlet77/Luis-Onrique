@@ -1,4 +1,6 @@
 new Swiper('.swiper',{
+    speed:850,
+    parallax:true,
     pagination:{
         el:'.swiper-pagination',
         clickable:true,

@@ -68,6 +68,9 @@ main {
 		margin-bottom: 19px;
 		transform: translate(-50%, 0px);
 		left: 50%;
+		@media(min-width:962px){
+			left: 7%;
+		}
 	}
 
 	&__text {

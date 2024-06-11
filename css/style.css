@@ -446,6 +446,11 @@ header {
           transform: translate(-50%, 0px);
   left: 50%;
 }
+@media (min-width: 962px) {
+  .content__title::before {
+    left: 7%;
+  }
+}
 .content__text {
   font-size: 16px;
   font-family: "Asap Regular";
